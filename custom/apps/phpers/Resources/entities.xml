@@ -1,0 +1,10 @@
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/CustomEntity/Xml/entity-1.0.xsd">
+    <entity name="custom_entity_phpers_bestsellers">
+        <fields>
+            <string name="name" store-api-aware="true" required="true" />
+            <date name="sku" store-api-aware="true" />
+            <one-to-one name="products" reference="product" store-api-aware="true" on-delete="restrict" />
+            <!-- API /api/search/custom-entity-phpers-bestsellers -->
+        </fields>
+    </entity>
+</entities>
