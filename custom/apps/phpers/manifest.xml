@@ -8,7 +8,7 @@
         <description>Phpers Summit Workshop 2022</description>
         <author>Macopedia</author>
         <copyright>(c) by shopware AG</copyright>
-        <version>1.0.10</version>
+        <version>1.0.23</version>
         <license>MIT</license>
     </meta>
 
@@ -47,8 +47,24 @@
             <label lang="en-US">Welcome</label>
         </module>
 
-        <action-button action="welcome" entity="product" view="list" url="https://phpers-shopware-app.ddev.site/welcome">
+        <action-button action="welcome" entity="product" view="list" url="https://phpers-shopware-app.ddev.site/shop/welcome">
             <label>welcome2</label>
         </action-button>
     </admin>
+
+    <custom-fields>
+        <custom-field-set>
+            <name>phpers</name>
+            <label>PHPers</label>
+            <related-entities>
+                <product/>
+            </related-entities>
+            <fields>
+                <bool name="phpers_bestseller">
+                    <position>1</position>
+                    <label>Bestseller</label>
+                </bool>
+            </fields>
+        </custom-field-set>
+    </custom-fields>
 </manifest>
