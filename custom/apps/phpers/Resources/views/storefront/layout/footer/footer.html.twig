@@ -1,0 +1,8 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_navigation %}
+    {{ parent() }}
+    {% block layout_footer_navigation_column %}
+        <p>Modyfikacja footera poprzez aplikację Phpers</p>
+    {% endblock %}
+{% endblock %}
